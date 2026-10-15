@@ -7,7 +7,7 @@
 <title>Dentures in Manhasset, Long Island &amp; Queens | The Denture Center at Smile Services of New York</title>
 <meta name="description" content="New dentures, immediate dentures, repairs, relines and implant-supported options in Manhasset. Complimentary consultation with diagnostic imaging, 3D CBCT when indicated, and an on-site dental lab.">
 
-<link rel="canonical" href="https://denture.ssonydental.com/">
+<link rel="canonical" href="https://implants.ssonydental.com/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="geo.region" content="US-NY">
 <meta name="geo.placename" content="Manhasset, New York">
@@ -18,13 +18,13 @@
 <meta property="og:title" content="The Denture Center at Smile Services of New York">
 <meta property="og:description" content="New dentures, immediate dentures, repairs, relines and implant-supported options in Manhasset. Complimentary consultation with diagnostic imaging, 3D CBCT when indicated, and an on-site dental lab. (516) 500-7400.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://denture.ssonydental.com/">
+<meta property="og:url" content="https://implants.ssonydental.com/">
 <meta property="og:site_name" content="Smile Services of New York">
-<meta property="og:image" content="https://denture.ssonydental.com/assets/operatory.jpg">
+<meta property="og:image" content="https://implants.ssonydental.com/assets/operatory.jpg">
 <meta property="og:image:alt" content="The Denture Center at Smile Services of New York in Manhasset">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Denture Center at Smile Services of New York">
-<meta name="twitter:image" content="https://denture.ssonydental.com/assets/operatory.jpg">
+<meta name="twitter:image" content="https://implants.ssonydental.com/assets/operatory.jpg">
 <meta name="twitter:description" content="New dentures, immediate dentures, repairs, relines and implant-supported options in Manhasset. Complimentary consultation with diagnostic imaging, 3D CBCT when indicated, and an on-site dental lab.">
 
 <!-- Consent default (belt-and-suspenders alongside the GTM Consent Default tag).
@@ -65,12 +65,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@graph": [
     {
       "@type": "Dentist",
-      "@id": "https://denture.ssonydental.com/#practice",
+      "@id": "https://implants.ssonydental.com/#practice",
       "name": "The Denture Center at Smile Services of New York",
-      "url": "https://denture.ssonydental.com/",
+      "url": "https://implants.ssonydental.com/",
       "telephone": "+1-516-500-7400",
-      "image": "https://denture.ssonydental.com/assets/operatory.jpg",
-      "logo": "https://denture.ssonydental.com/assets/logo-sm.png",
+      "image": "https://implants.ssonydental.com/assets/operatory.jpg",
+      "logo": "https://implants.ssonydental.com/assets/logo-sm.png",
       "priceRange": "$$$",
       "medicalSpecialty": "Dentistry",
       "sameAs": ["[GOOGLE BUSINESS PROFILE URL - fill in]"],
@@ -116,7 +116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
     {
       "@type": "FAQPage",
-      "@id": "https://denture.ssonydental.com/#faq",
+      "@id": "https://implants.ssonydental.com/#faq",
       "mainEntity": [
         {"@type": "Question", "name": "My dentures are loose. Do I need new ones?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. Gums and bone change shape over time, so a denture that once fit well can start to slip. A reline reshapes the fitting surface to match your mouth as it is now. If the denture is worn or broken beyond that, we talk through new dentures or implant-supported options."}},
         {"@type": "Question", "name": "Can you repair my denture the same day?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes. Our dental lab is on site, so same-day denture repairs are available when possible. Bring the denture to your appointment and we will tell you what it needs."}},
@@ -225,18 +225,25 @@ p + .lede{margin-top:-10px}
   min-height:56px;padding:15px 26px;border-radius:100px;cursor:pointer;
   transition:background .2s,color .2s,border-color .2s;
 }
-.btn-primary{background:var(--primary);color:#fff;border:1px solid var(--primary)}
-.btn-primary:hover{background:var(--primary-deep);color:#fff}
+.btn-primary{background:var(--lav);color:var(--ink);border:1px solid var(--lav)}
+.btn-primary:hover{background:#fff;border-color:#fff;color:var(--ink)}
 .btn-secondary{background:transparent;color:var(--ink);border:1px solid #C8B8E8;font-weight:500}
 .btn-secondary:hover{border-color:var(--ink);color:var(--ink);background:#fff}
 .btn-quiet{background:var(--ink);color:#fff;border:1px solid var(--ink)}
 .btn-quiet:hover{background:#1C1430;color:#fff}
 
 /* ---------- hero ---------- */
-.hero{padding:96px 20px 0;position:relative;isolation:isolate}
-.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:min(100%,760px);z-index:-1;background:url("assets/hero-operatory.png") center 30%/cover no-repeat;opacity:.16;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.hero{padding:104px 20px 0;position:relative;isolation:isolate;background:var(--ink);color:#fff}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/hero-operatory.png") center 30%/cover no-repeat;opacity:.22}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(43,31,66,.55),rgba(43,31,66,.92) 70%,var(--ink))}
+.hero h1{color:#fff}
+.hero .lede{color:rgba(255,255,255,.84)}
+.hero .hl{color:var(--lav)}
+.hero .btn-secondary{color:#fff;border-color:rgba(255,255,255,.55)}
+.hero .btn-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff;color:#fff}
+.hero-photo .ph-label{color:#5E5178}
 .hero .copy{max-width:52ch}
-.hero-kicker{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);margin-bottom:16px}
+.hero-kicker{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--lav);margin-bottom:16px}
 .hero h1 em{font-style:italic;font-weight:400}
 .trust{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
 .trust li{display:flex;align-items:center;gap:8px}
@@ -522,8 +529,8 @@ footer .fhours .fclosed span:last-child{color:var(--ink-faint);font-weight:500}
 }
 .callbar-inner{display:flex;gap:9px}
 .callbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none;font-weight:600;font-size:.98rem;padding:12px 8px;border-radius:999px;text-align:center;line-height:1.2}
-.callbar a.cb-book{background:var(--primary);color:#fff;flex:1.4}
-.callbar a.cb-call{background:transparent;color:var(--ink);border:1px solid #C8B8E8}
+.callbar a.cb-book{background:var(--lav);color:var(--ink);order:2}
+.callbar a.cb-call{background:transparent;color:var(--ink);border:1px solid #C8B8E8;order:1}
 
 .consent{
   display:none;position:fixed;left:0;right:0;z-index:20;
@@ -547,7 +554,7 @@ footer .fhours .fclosed span:last-child{color:var(--ink-faint);font-weight:500}
 /* ===================== 700px and up ===================== */
 @media (min-width:700px){
   section{padding:104px 40px}
-  .hero{padding:132px 40px 0}
+  .hero{padding:130px 40px 0}
   h1{font-size:3.1rem}
   h2{font-size:2.5rem}
   .lede{font-size:1.15rem}
@@ -583,8 +590,8 @@ footer .fhours .fclosed span:last-child{color:var(--ink-faint);font-weight:500}
   }
   .call-pill{color:var(--ink);border:1px solid #C8B8E8}
   .call-pill:hover{border-color:var(--ink);color:var(--ink)}
-  .book-pill{background:var(--primary);color:#fff;border:1px solid var(--primary)}
-  .book-pill:hover{background:var(--primary-deep);color:#fff}
+  .book-pill{background:var(--lav);color:var(--ink);border:1px solid var(--lav)}
+  .book-pill:hover{background:var(--ink);border-color:var(--ink);color:#fff}
   .topbar{padding:12px 28px}
   .brand-logo{height:40px;width:40px}
   .wordmark{font-size:1rem}
@@ -594,7 +601,7 @@ footer .fhours .fclosed span:last-child{color:var(--ink-faint);font-weight:500}
 /* ===================== 1041px and up ===================== */
 @media (min-width:1041px){
   section{padding:140px clamp(40px,7vw,120px)}
-  .hero{padding:168px clamp(40px,7vw,120px) 0}
+  .hero{padding:150px clamp(40px,7vw,120px) 0}
   .inner{max-width:1180px;margin:0 auto;width:100%}
   h1{font-size:4rem}
   h2{font-size:2.9rem}
@@ -637,7 +644,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="topbar-actions">
     <a class="call-pill" href="tel:5165007400" data-track="call" data-loc="topbar">(516) 500-7400</a>
-    <a class="book-pill" href="#book" data-track="book" data-loc="topbar">Book Your Consultation</a>
+    <a class="book-pill" href="#book" data-track="book" data-loc="topbar">Book Online</a>
   </div>
 </header>
 
@@ -977,7 +984,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>Book Your <span class="hl">Complimentary Consultation.</span></h2>
       <p class="lede">Diagnostic imaging and a personalized review of your options with the doctor. Located in Manhasset and serving patients throughout Long Island and Queens.</p>
       <div class="cta-row">
-        <a class="btn btn-quiet" href="tel:5165007400" data-track="call" data-loc="book">Prefer to talk first? (516) 500-7400</a>
+        <a class="btn btn-quiet" href="tel:5165007400" data-track="call" data-loc="book">Prefer to Talk First? Call Now</a>
       </div>
       <div class="book-card">
         <iframe class="book-frame" loading="lazy"
@@ -1003,7 +1010,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div data-day="4"><span>Thursday</span><span>6:00am to 10pm</span></div>
             <div data-day="5"><span>Friday</span><span>6:00am to 10pm</span></div>
           </div>
-          <a class="btn btn-secondary" style="margin-top:22px;width:100%" href="https://www.google.com/maps/dir//smile+services+of+new+york/@40.7736343,-73.7432809,13z" target="_blank" rel="noopener" data-track="directions">Get directions</a>
+          <a class="btn btn-primary" style="margin-top:22px;width:100%" href="https://www.google.com/maps/dir//smile+services+of+new+york/@40.7736343,-73.7432809,13z" target="_blank" rel="noopener" data-track="directions">Get directions</a>
         </div>
       </div>
     </div>
@@ -1051,7 +1058,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<div class="callbar"><div class="callbar-inner"><a class="cb-book" href="#book" data-track="book" data-loc="sticky_bar">Book Your Consultation</a><a class="cb-call" href="tel:5165007400" data-track="call" data-loc="sticky_bar">Call</a></div></div>
+<div class="callbar"><div class="callbar-inner"><a class="cb-book" href="#book" data-track="book" data-loc="sticky_bar">Book Online</a><a class="cb-call" href="tel:5165007400" data-track="call" data-loc="sticky_bar">Tap to Call</a></div></div>
 
 <script>
 setTimeout(function(){ document.documentElement.classList.add('reveal-all'); }, 2500);
